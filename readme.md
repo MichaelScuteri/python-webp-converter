@@ -4,10 +4,10 @@ An easy and convenient way to convert a large number of image files to .webp for
 The script utilises Google's libwebp package to convert the image files and allows for a lot of customization of how you want to convert them by simply editing one line in the python file.
 
 # How to use?
-The script only has one dependency, which is the libwebp package. You can download it [here](https://developers.google.com/speed/webp/docs/precompiled).
+The script only has one dependency, which is the libwebp package. For Windows users you can download it [here](https://developers.google.com/speed/webp/docs/precompiled).
 
-### Setting Up libwebp
-Once you have downloaded the libwebp package either simply place it into the libwebp placeholder folder downloaded with this project (recommended) or set it to your environment path.
+### Windows
+Once you have downloaded the libwebp package either simply place it into the libwebp placeholder folder downloaded with this project or set it to your environment path.
 
 Setting it to your environment PATH for current session:
 
@@ -16,6 +16,12 @@ Setting it to your environment PATH for current session:
 Set it permanently to your environment:
 
     [Environment]::SetEnvironmentVariable("PATH", $env:PATH + "C:\Path\To\libwebp\bin\cwebp.exe", [EnvironmentVariableTarget]::Machine)
+
+## MacOS
+To install the webp dependency on MacOS you can do it simply through homebrew:
+
+    brew install webp
+
 
 ### Converting Images
 
